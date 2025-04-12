@@ -1,14 +1,12 @@
 :root {
-    --background-color: cadetblue;
+    --background-color: rgb(32, 81, 142);
     --textColour: white;
-
 	color: var(--textColour);
+
+    
 
 	/* margin: 0; */
 }
-
-
-
 
 body {
     width: 100%;
@@ -22,30 +20,84 @@ body {
     padding: 0;
 } 
 
-
 header {
-    background-color: burlywood;
+    background-color: rgb(181, 112, 21);
 }
 
+footer {
+	background-color: rgb(181, 112, 21);
+	padding: 2%;
+	text-align: center;
+}
 
-/* .moviecard {background-color:coral;
+/* .moviecard {
 
 }
 
-main.movielist > section.moviecard
+main.movielist > .moviecard {
 
 } */
 
-main.movielist {
 
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+main.movielist {
+    margin: 1%;
     display: flex;
-    gap: 2dvw;
+    gap: 0.2dvw;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
    
-    section.moviecard {
+    .moviecard {
+        border-radius: 1%;
         background-color: var(--background-color);
         width: 31%;
         padding: 1%;
+
+        h2,h3,.movieRating {
+            text-align: center;
+            font-family: 'Trebuchet MS'
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            text-align: center;
+
+        }
+        img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: aliceblue
+            
+        }
+
+
+
+
+
+        a {
+            background-color: rgb(181, 112, 21);
+            /* filter: invert(100%); */
+            display: block;
+            /* height: 15%; */
+            padding: 3%;
+            /* shadow, hover, border/outline, rounded edges */
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px rgb(16, 159, 242);
+            text-decoration: none;
+            color: yellow ;
+            font-family: cursive;
+            font-weight: bold;
+            text-align: center;
+        }
+        a:hover {
+            background-color: rgb(72, 173, 231) ;
+        }
     }
 }
+
