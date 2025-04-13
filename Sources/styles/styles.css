@@ -1,28 +1,28 @@
+
 :root {
+   
     --background-color: rgb(32, 81, 142);
     --textColour: white;
 	color: var(--textColour);
-
-    
-
-	/* margin: 0; */
+     background-image: url(https://pbs.twimg.com/ext_tw_video_thumb/1568087722073509888/pu/img/yCtRQjdYq2Oh9GIm.jpg:large)
 }
 
 body {
     width: 100%;
     height: 100%;
+    margin: 0;
     /* max-height: 100dvh; */
     /* overflow: hidden; */
-} */
-
-* {
-    margin: 0;
-    padding: 0;
 } 
 
 header {
-    background-color: rgb(181, 112, 21);
+    background-color: rgba(106, 43, 189, 0.634);
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 0);
 }
+
 
 footer {
 	background-color: rgb(181, 112, 21);
@@ -31,18 +31,11 @@ footer {
 }
 
 /* .moviecard {
-
 }
 
 main.movielist > .moviecard {
-
 } */
 
-
-header {
-	display: flex;
-	justify-content: space-between;
-}
 
 
 main.movielist {
@@ -55,8 +48,8 @@ main.movielist {
     .moviecard {
         border-radius: 1%;
         background-color: var(--background-color);
-        width: 31%;
-        padding: 1%;
+        width: 30%;
+        padding: 0.4%;
 
         h2,h3,.movieRating {
             text-align: center;
@@ -69,16 +62,14 @@ main.movielist {
             text-align: center;
 
         }
+       
         img {
+            border-radius: 1%;
             width: 100%;
             aspect-ratio: 16/9;
             background-color: aliceblue
             
         }
-
-
-
-
 
         a {
             background-color: rgb(181, 112, 21);
