@@ -16,6 +16,7 @@ body {
 } 
 
 header {
+    border-bottom: solid 2px bisque;
     background-color: rgba(106, 43, 189, 0.634);
 	display: flex;
 	justify-content: space-between;
@@ -25,6 +26,7 @@ header {
 
 
 footer {
+    border-top: solid 2px bisque;
 	background-color: rgba(106, 43, 189, 0.634);
 	padding: 2%;
 	text-align: center;
@@ -39,52 +41,58 @@ main.movielist > .moviecard {
 
 
 main.movielist {
-    margin: 1%;
+    margin: 2%;
     display: flex;
-    gap: 0.2dvw;
+    gap: 2dvw;
     flex-wrap: wrap;
     justify-content: space-evenly;
    
     .moviecard {
+        border: solid 1.5px bisque;
         border-radius: 1%;
         background-color: var(--background-color);
         width: 30%;
         padding: 0.4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
 
         h2,h3,.movieRating {
             text-align: center;
-            font-family: 'Trebuchet MS'
+            font-size: 5dvh;
+            margin: 0 auto;
         }
 
         p {
             font-family: Arial, Helvetica, sans-serif;
             font-size: small;
             text-align: center;
-
         }
        
         img {
+            border: solid 2px black;
             border-radius: 1%;
-            width: 100%;
+            width: 94%;
             aspect-ratio: 16/9;
             background-color: aliceblue
-            
         }
 
         a {
+            width: 80%;
+           border: solid 2px bisque;
             background-color: rgb(181, 112, 21);
             /* filter: invert(100%); */
             display: block;
             /* height: 15%; */
-            padding: 3%;
+            padding: 3.2%;
             /* shadow, hover, border/outline, rounded edges */
             border-radius: 5px;
-            box-shadow: 2px 2px 2px rgb(16, 159, 242);
             text-decoration: none;
             color: yellow ;
             font-family: cursive;
             font-weight: bold;
-            text-align: center;
+            text-align: center; 
         }
         a:hover {
             background-color: rgb(72, 173, 231) ;
@@ -92,3 +100,23 @@ main.movielist {
     }
 }
 
+@media screen and (max-width: 600px) {
+    main.movielist {
+        flex-direction: column;
+        margin: 5%;
+        gap: 4dvw;
+        
+       
+        .moviecard {
+            border: solid 2px bisque;
+            border-radius: 1%;
+            background-color: var(--background-color);
+            width: 100%;
+            padding: 0.7%;
+
+
+            a {
+               width: 70%;
+        }
+    } 
+} 
